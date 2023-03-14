@@ -3,13 +3,13 @@
 #include <city.h>
 
 /* Constants */
-#define PAVEMENT_HEIGHT (0.2f)
-#define PARK_HEIGHT (0.3f)
-#define PLAZA_HEIGHT (0.3f)
-#define PLAZA_POLE_HEIGHT (6.0f)
-#define STREETS_HEIGHT (10.0f)
-#define TRAFFIC_FREQUENCY (10.0f)
-#define SMALL_BUILDING_THRESHOLD (20.0f)
+#define PAVEMENT_HEIGHT (1.0f)
+#define PARK_HEIGHT (1.0f)
+#define PLAZA_HEIGHT (1.0f)
+#define PLAZA_POLE_HEIGHT (1.0f)
+#define STREETS_HEIGHT (1.0f)
+#define TRAFFIC_FREQUENCY (1.0f)
+#define SMALL_BUILDING_THRESHOLD (1.0f)
 
 typedef struct {
     float width;
