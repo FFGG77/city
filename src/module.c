@@ -3,13 +3,13 @@
 #include <city.h>
 
 /* Constants */
-#define PAVEMENT_HEIGHT (5.0f)
-#define PARK_HEIGHT (5.0f)
-#define PLAZA_HEIGHT (5.0f)
-#define PLAZA_POLE_HEIGHT (5.0f)
-#define STREETS_HEIGHT (5.0f)
-#define TRAFFIC_FREQUENCY (5.0f)
-#define SMALL_BUILDING_THRESHOLD (5.0f)
+#define PAVEMENT_HEIGHT (1.0f)
+#define PARK_HEIGHT (1.0f)
+#define PLAZA_HEIGHT (1.0f)
+#define PLAZA_POLE_HEIGHT (1.0f)
+#define STREETS_HEIGHT (1.0f)
+#define TRAFFIC_FREQUENCY (1.0f)
+#define SMALL_BUILDING_THRESHOLD (1.0f)
 
 typedef struct {
     float width;
@@ -224,7 +224,7 @@ void plant_building(
     ecs_add_pair(world, building, EcsIsA, CityBuilding);
     ecs_set(world, building, EcsPosition3, {
         .x = x,
-        .y = building_height / 2.0,
+        .y = building_height / 10.0,
         .z = y
     });
     ecs_set(world, building, EcsBox, {
